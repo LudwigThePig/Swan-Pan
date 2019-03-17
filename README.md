@@ -15,19 +15,12 @@ SwanPan is an app that allows you to easily brainstorm and plan for your next ho
 
 ### Install
 
-Swan Pan requires Node.js to Run
+SwanPan requires Node.js to run.
 
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-$ cd dillinger
-$ npm install -d
-$ node app
-```
-
-For production environments...
-
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
+$ git clone https://github.com/LudwigThePig/SwanPan.git
+$ npm install
+$ npm run dev
 ```

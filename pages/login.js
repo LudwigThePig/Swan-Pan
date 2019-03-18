@@ -1,5 +1,7 @@
-import withLayout from '../lib/Layout'
+import Layout from '../lib/Layout'
 
-const Page = () => <p>Log Me In!</p>
-
-export default withLayout(Page)
+export default () => (
+  <Layout>
+    <p>Log me in!</p>
+  </Layout>
+)

@@ -12,8 +12,8 @@ export default () => (
       body { 
         font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
         text-align: center;
-        background:#454851;
-        color: #fff;
+        background:#fff;
+        color: #3b3a36;
       }
     `}</style>
   </div>

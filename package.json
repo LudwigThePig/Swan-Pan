@@ -9,7 +9,7 @@
     "start": "NODE_ENV=production node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Morgan Galvin",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",

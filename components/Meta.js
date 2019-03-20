@@ -15,6 +15,10 @@ export default () => (
         background:#fff;
         color: #3b3a36;
       }
+      #main{
+        background-color: #3b3a36;
+        height: 90vh;
+      }
     `}</style>
   </div>
 )

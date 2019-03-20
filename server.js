@@ -1,5 +1,12 @@
 const express = require('express')
 const next = require('next')
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const helmet = require('helmet');
+const mongoose = require('mongoose');
+const passport = require('passport');
+const session = require('express-session');
+const LocalStrategy = require('passport-local').Strategy;
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
@@ -9,6 +16,20 @@ app
   .prepare()
   .then(() => {
     const server = express()
+
+    server.use(helmet());
+    server.use(helmet.frameguard({ action: 'sameorigin' }))
+
+    server.use(cors({origin: '*'})); //For FCC testing purposes only
+
+    server.use(bodyParser.json());
+    server.use(bodyParser.urlencoded({ extended: true }));
+
+    server.use(session({
+      secret: process.env.SESSION_SECRET,
+      resave: true,
+      saveUninitialized: true,
+    }));
 
     server.get('/p/:id', (req, res) => {
       const actualPage = '/post'

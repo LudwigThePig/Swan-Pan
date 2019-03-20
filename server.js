@@ -40,6 +40,14 @@ app
     server.get('*', (req, res) => {
       return handle(req, res)
     })
+    
+    mongoose.connect(process.env.MONGO, (err, db)=>{
+      if (err){
+        console.log(err);
+      } else {
+        console.log('You are now connected to the database!');
+      }
+    });
 
     server.listen(3000, err => {
       if (err) throw err

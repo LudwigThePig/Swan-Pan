@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import React, { Component }  from 'react';
 
 const Header = () => (
   <div id="header">
@@ -12,15 +12,18 @@ const Header = () => (
     </svg>
     
     {/* <img src="../static/paper-bird.svg" alt="swan" fill="red" /> */}
-    <Link href="/">
+    <a href="/">
       <h1>SwanPan</h1>
-    </Link>
+    </a>
     </div>
-    <Link href="/login">
+    <a href="/login">
       <span>Login</span>
-    </Link>
+    </a>
     <style jsx>
     {`
+    a {
+      color: inherit;
+    }
      #header{
       background: #c0dfd9;
       color: #fff;

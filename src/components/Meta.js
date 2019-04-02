@@ -1,4 +1,6 @@
-import Head from 'next/head'
+import Head from 'react-meta-tags';
+import React, { Component }  from 'react';
+
 export default () => (
   <div>
     <Head>

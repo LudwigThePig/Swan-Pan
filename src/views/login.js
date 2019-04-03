@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import React, { Component }  from 'react';
 
 export default () => (
   <Layout>

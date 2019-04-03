@@ -13,7 +13,7 @@ class App extends Component {
               <Home />
             </div>
           )}/>
-          <Route exact={true} path='/signin' render={() => (
+          <Route exact={true} path='/login' render={() => (
             <div className="App">
               <Login />
             </div>

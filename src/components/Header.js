@@ -16,7 +16,7 @@ const Header = () => (
       <h1>SwanPan</h1>
     </a>
     </div>
-    <a href="/login">
+    <a href="login">
       <span>Login</span>
     </a>
     <style jsx>

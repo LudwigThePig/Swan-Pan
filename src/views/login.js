@@ -12,9 +12,5 @@ export default () => (
         <input type="submit"></input>
       </form>
     </div>
-    <style jsx>{`
-
-    `}
-    </style>
   </Layout>
 )

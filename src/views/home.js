@@ -27,7 +27,7 @@ export default () => (
 
       a {
         text-decoration: none;
-        color: blue;
+        color: inherit;
       }
 
       a:hover {
@@ -35,10 +35,8 @@ export default () => (
       }
       #main{
         height: 90vh;
-        color: white;
-        background-image: url('./static/jumbo.jpg');
-        background-position: center top; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
+        color: #3b3a36;
+        background: white;
       }
     `}</style>
   </Layout>

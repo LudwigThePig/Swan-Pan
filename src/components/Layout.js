@@ -1,6 +1,7 @@
 import React, { Component }  from 'react';
 import Header from './Header';
 import Meta from './Meta';
+import Footer from './Footer'
 
 const layoutStyle = {
   margin: 0,
@@ -12,6 +13,7 @@ const Layout = props => (
     <Meta />
     <Header />
     {props.children}
+    <Footer />
   </div>
 )
 

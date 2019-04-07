@@ -17,11 +17,9 @@ This is a progressive web app that is designed to help you plan and budget your 
 
 
 ## How to Install
-1. Clone this repo
-2. Run `node server` to start the express server.
-  - The server is set to run on port 8080.
-3. Run `npm start` to launch the React page.
-  - The react page is set to run on port 3000.
+1. Clone this repo.
+2. Run `npm start` to launch the app.
+  - The app will run on port 8080 by default.
 
 ## Tech Used
 - Node.js

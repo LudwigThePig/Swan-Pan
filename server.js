@@ -10,7 +10,7 @@ const app = express(); //getting this party started 🎉
 
 //Configuring dependencies
 dotenv.config();
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static('public'));
 app.use(helmet());
 app.use(helmet.frameguard({ action: 'sameorigin' }))
 
